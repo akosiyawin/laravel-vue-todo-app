@@ -116,7 +116,7 @@ export default {
                         this.loadTodos()
                         this.$swal(
                             'Deleted!',
-                            'Your file has been deleted.',
+                            'Your selected todo has been deleted.',
                             'success'
                         )
                     })

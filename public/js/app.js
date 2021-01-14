@@ -1973,7 +1973,7 @@ vue__WEBPACK_IMPORTED_MODULE_1__.default.use(vue_sweetalert2__WEBPACK_IMPORTED_M
           form["delete"]('/api/todos/' + todo.id).then(function () {
             _this5.loadTodos();
 
-            _this5.$swal('Deleted!', 'Your file has been deleted.', 'success');
+            _this5.$swal('Deleted!', 'Your selected todo has been deleted.', 'success');
           });
         }
       });
