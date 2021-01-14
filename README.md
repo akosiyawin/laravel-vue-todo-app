@@ -9,7 +9,7 @@
 
 ## About This Project
 
-This project is develop using Laravel & Vue. This is just a practice project
+This project is created using Laravel & Vue. This is just a practice project
 that I decided to add on my repositories, so I can take a look back and review
 my codes whenever I want/need to.
 
