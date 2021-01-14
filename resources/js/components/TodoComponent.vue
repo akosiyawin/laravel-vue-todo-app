@@ -27,7 +27,9 @@
                         <p v-if="onEditMode !== todo.id" class="m-0 p-0 flex-grow-1">{{ todo.title }}</p>
                         <div v-if="onEditMode === todo.id" class="flex-grow-1">
                             <input v-model="editForm.title" class="form-control"
-                                   :class="{'is-invalid' : editForm.errors.has('title')}" type="text">
+                                   :class="{'is-invalid' : editForm.errors.has('title')}"
+                                   @keydown="editForm.errors.clear('title')"
+                                   type="text">
                             <div class="invalid-feedback" v-text="editForm.errors.get('title')"></div>
                         </div>
                         <span class="btn btn-outline-info mr-2" v-if="onEditMode !== todo.id" @click="toggleEdit(todo)">Edit</span>

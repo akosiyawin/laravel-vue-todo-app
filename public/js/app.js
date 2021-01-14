@@ -1890,6 +1890,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 vue__WEBPACK_IMPORTED_MODULE_1__.default.use(vue_sweetalert2__WEBPACK_IMPORTED_MODULE_0__.default);
@@ -45117,6 +45119,9 @@ var render = function() {
                         attrs: { type: "text" },
                         domProps: { value: _vm.editForm.title },
                         on: {
+                          keydown: function($event) {
+                            return _vm.editForm.errors.clear("title")
+                          },
                           input: function($event) {
                             if ($event.target.composing) {
                               return
